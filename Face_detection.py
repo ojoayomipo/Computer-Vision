@@ -19,7 +19,7 @@ img = cv2.resize(original_img, (0,0), fx=0.2, fy = 0.2)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #Load Cascade
-face_cascade = cv2.CascadeClassifier('/root/miniconda3/lib/python3.7/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 #Find face. If faces are found, the position of the detected faces ais returned as Rect(x,y,w,h)
 
